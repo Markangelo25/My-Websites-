@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Headset Showcase</title>
+  <style>
+    .hero {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: radial-gradient(circle at center, #0033ff 0%, #000 80%);
+      position: relative;
+    }
+
+    header {
+      position: absolute;
+      top: 0; width: 97%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white; z-index: 3;
+    }
+
+    header nav a {
+      margin: 0 15px; color: white;
+      text-decoration: none; font-weight: 500;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      z-index: 1;
+      padding-top: 7rem;
+    }
+
+    .headset {
+      width: 150px;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    .headset img {
+      width: 170%; height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+      background-color: transparent;
+    }
+
+    .headset.center {
+      width: 170px;
+      z-index: 2;
+      animation: bounce-large 2s infinite ease-in-out;
+    }
+
+    .hero {
+      width: auto;
+      display: flex;
+      justify-content: center; align-items: center;
+      flex-direction: column; text-align: center;
+      padding: 2rem;
+      z-index: 2;
+      position: relative;
+    }
+
+   
+
+    .buttons {
+      display: flex; gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .buttons a {
+      padding: 0.9rem 1.8rem;
+      background: #0057ff; color: white;
+      border-radius: 25px;
+      text-decoration: none; font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #003fbb;
+    }
+
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes bounce-large {
+      0%,100% { transform: translateY(0) scale(1.05); }
+      50% { transform: translateY(-20px) scale(1.1); }
+    }
+
+     @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  
+  <div class="hero">
+  <header>
+    <!-- Inside your <header> tag -->
+<div style="display: flex; align-items: center; gap: 10px;">
+  <img src="Images/logo1.webp" alt="Logo" style="width: 60px; height: 60px; background-color: aliceblue; border-radius: 50%; object-fit: cover;">
+</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Categories</a>
+      <a href="#">About</a>
+      <a href="#">Reviews</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+
+   <div style="transform: translateY(50px); opacity: 0; animation: slideUp 1s ease-out forwards;">
+  <div class="carousel">
+    <!-- Replace these URLs with your transparent PNGs -->
+    <div class="headset">
+      <img src="Images/black.png" />
+    </div>
+    <div class="headset">
+      <img src="Images/red.png" />
+    </div>
+    <div class="headset center">
+      <img src="Images/blue.png" />
+    </div>
+    <div class="headset">
+      <img src="Images/green.png" />
+    </div>
+    <div class="headset">
+      <img src="Images/white.png" />
+    </div>
+  </div>
+</div>
+
+ <class="hero" style="transform: translateY(50px); opacity: 0; animation: slideUp 1s ease-out forwards;">
+  <!-- Your content here, e.g. hero section -->
+  <h1 style="color: white; font-size: 3.5rem;">Next‑Gen Audio.<br/>Precision Crafted.</h1>
+  <h5 style="color: #ccc; font-size: 1.4rem;">Explore our revolutionary range of headsets designed for gamers, audiophiles, and professionals.</h5>
+  
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem;">
+  <a href="#" style="padding: 0.9rem 1.8rem; background: #0057ff; color: white; border-radius: 25px; text-decoration: none; font-weight: bold; transition: 0.3s;">View Collection</a>
+  <a href="#" style="padding: 0.9rem 1.8rem; background: #0057ff; color: white; border-radius: 25px; text-decoration: none; font-weight: bold; transition: 0.3s;">Shop Now</a>
+</div>
+ </div>
+
+
+
+
+
+  <!-- Featured Collection-->
+ 
+  <div class="slide-up" style="transform: translateY(50px); opacity: 0; transition: transform 0.6s ease-out, opacity 0.6s ease-out; margin: 3rem auto; text-align: center; color: white;">
+<div style="padding: 4rem 2rem; background-color: #fff; text-align: center; color: rgb(2, 0, 8);">
+  <h2 style="font-size: 3rem; margin-bottom: 2rem;">🎧 Featured Headset Collection</h2>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; perspective: 1000px;">
+    
+    <!-- Card 1 -->
+    <div style="width: 280px; background: #111; border-radius: 20px; padding: 1rem; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer;"
+         onmouseover="this.style.transform='rotateY(15deg)'"
+         onmouseout="this.style.transform='rotateY(0deg)'">
+      <img src="Images/coll 1.webp" alt="Headset 1" style="width: 100%; height: auto; border-radius: 15px;">
+      <h3 style="margin: 1rem 0 0.5rem;">BassMax Pro</h3>
+      <p style="color: #aaa;">Immersive deep bass with soft cushions.</p>
+      <a href="#" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background: #0057ff; color: white; border-radius: 20px; text-decoration: none; font-weight: bold;">Buy Now</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div style="width: 280px; background: #111; border-radius: 20px; padding: 1rem; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer;"
+         onmouseover="this.style.transform='rotateY(15deg)'"
+         onmouseout="this.style.transform='rotateY(0deg)'">
+      <img src="Images/coll 2.webp" alt="Headset 2" style="width: 100%; height: auto; border-radius: 15px;">
+      <h3 style="margin: 1rem 0 0.5rem;">CrystalTone X</h3>
+      <p style="color: #aaa;">Studio-quality sound for audiophiles.</p>
+      <a href="#" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background: #0057ff; color: white; border-radius: 20px; text-decoration: none; font-weight: bold;">Buy Now</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div style="width: 280px; background: #111; border-radius: 20px; padding: 1rem; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer;"
+         onmouseover="this.style.transform='rotateY(15deg)'"
+         onmouseout="this.style.transform='rotateY(0deg)'">
+      <img src="Images/coll 3.jpg" alt="Headset 3" style="width: 100%; height: auto; border-radius: 15px;">
+      <h3 style="margin: 1rem 0 0.5rem;">WaveFusion 360</h3>
+      <p style="color: #aaa;">360° surround with noise cancellation.</p>
+      <a href="#" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background: #0057ff; color: white; border-radius: 20px; text-decoration: none; font-weight: bold;">Buy Now</a>
+    </div>   
+  </div>
+</div>
+ </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.transform = 'translateY(0)';
+          entry.target.style.opacity = '1';
+          observerInstance.unobserve(entry.target); // only animate once
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.slide-up').forEach(el => observer.observe(el));
+  });
+</script>
+
+
+
+
+<!-- 🌌 Categories Section with Seamless Auto-Scroll -->
+<div class="slide-up" style="position: relative; padding: 5rem 2rem; text-align: center; background-image: url('Images/catbag.jpg'); background-size: cover; background-position: center; background-blend-mode: multiply; background-color: rgba(0, 0, 0, 0.85); color: white; transform: translateY(50px); opacity: 0; transition: transform 0.6s ease-out, opacity 0.6s ease-out; overflow: hidden;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <div style="display: flex; align-items: baseline; gap: 1rem; margin-top: 25px;">
+      <img src="Images/catlogo.png" alt="Categories Icon" style="width: 80px; height: 60px; border-radius: 50%; transition: transform 0.5s; object-fit: cover; animation: spinIconOnce 1s ease-out;" onanimationend="setTimeout(() => { this.style.animation = 'bounceIcon 1s infinite'; }, 1000)">
+      <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem; position: relative; display: inline-block; animation: fadeSlideIn 1.5s ease forwards;">
+        Explore by Categories
+        <span style="display: block; height: 3px; width: 100%; background: linear-gradient(90deg, #00f3ff, #0057ff); position: absolute; bottom: -10px; left: 0; animation: underline-slide 2s ease-out forwards;"></span>
+      </h2>
+    </div>
+  </div>
+
+  <div id="category-scroll-wrapper" style="position: relative; overflow-x: auto; overflow-y: hidden; margin-top: 3rem; scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+    <div id="category-scroll" style="display: flex; gap: 2rem; width: max-content; animation: autoScrollLoop 60s linear infinite; touch-action: pan-x;">
+    </div>
+    
+  </div>
+</div>
+
+<script>
+const categories = [
+  { img: 'Images/gamehs.webp', title: 'Gaming Headsets', desc: 'Immersive sound and noise isolation.' },
+  { img: 'Images/wirelesshs.jpg', title: 'Wireless Headsets', desc: 'Freedom to move, crystal clear sound.' },
+  { img: 'Images/studiohs.webp', title: 'Studio Headphones', desc: 'Precision-tuned for producers & engineers.' },
+  { img: 'Images/budgeths.webp', title: 'Budget Friendly', desc: 'Affordable quality you can trust.' },
+  { img: 'Images/luxuryhs.jpg', title: 'Luxury Models', desc: 'Elegant designs with premium features.' },
+  { img: 'Images/kidshs.avif', title: 'Kids Headsets', desc: 'Safe, fun, and colorful for children.' }
+];
+
+function cloneForLooping(container, items) {
+  for (let i = 0; i < 2; i++) {
+    items.forEach(cat => {
+      const card = document.createElement('div');
+      card.style.cssText = "padding: 1.5rem; transition: transform 0.5s, box-shadow 0.5s; cursor: pointer; text-align: center; width: 250px; height: 450px; background: transparent; box-shadow: none; border: none; margin: 2rem 1rem; flex: 0 0 auto; border-radius: 20px; box-sizing: border-box; overflow: visible;";
+      card.onmouseover = () => { card.style.transform='scale(1.05)'; card.style.boxShadow='0 0 20px #00f3ff'; };
+      card.onmouseout = () => { card.style.transform='scale(1)'; card.style.boxShadow='none'; };
+      card.innerHTML = `
+        <img src="${cat.img}" alt="${cat.title}" style="width: 100%; border-radius: 15px; margin-bottom: 1rem;">
+        <h3 style="margin-bottom: 0.5rem;">${cat.title}</h3>
+        <p style="color: #ccc;">${cat.desc}</p>
+        <a href="#" onclick="const el = this.parentElement; el.style.animation='fastDiagonalZoom 0.6s ease-out forwards'; setTimeout(() => window.location.href='category.html', 600); event.preventDefault();" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: #0057ff; color: white; border-radius: 20px; text-decoration: none; font-weight: bold;">Browse Category</a>
+      `;
+      container.appendChild(card);
+    });
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById('category-scroll');
+  cloneForLooping(container, categories);
+  const wrapper = document.getElementById('category-scroll-wrapper');
+  wrapper.addEventListener('mouseover', () => container.style.animationPlayState = 'paused');
+  wrapper.addEventListener('mouseout', () => container.style.animationPlayState = 'running');
+});
+
+function scrollLeft() {
+  const el = document.getElementById('category-scroll-wrapper');
+  el.scrollBy({ left: -300, behavior: 'smooth' });
+}
+
+function scrollRight() {
+  const el = document.getElementById('category-scroll-wrapper');
+  el.scrollBy({ left: 300, behavior: 'smooth' });
+}
+</script>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.transform = 'translateY(0)';
+        entry.target.style.opacity = '1';
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.slide-up').forEach(el => observer.observe(el));
+});
+</script>
+
+<style>
+@keyframes underline-slide {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes fadeSlideIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes spinIconOnce {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes bounceIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes fastDiagonalZoom {
+  0% { transform: scale(1) rotate3d(1, 1, 0, 0deg); opacity: 1; }
+  100% { transform: scale(1.8) rotate3d(1, 1, 0, 360deg); opacity: 0; }
+}
+@keyframes autoScrollLoop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
+
+
+
+
+
+</body>
+</html>
